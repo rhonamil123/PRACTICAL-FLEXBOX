@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox#5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+            gap: 4px;
+            height: calc(100vh - 8px);
+        }
+
+        nav {
+            border: 1px solid black;
+            gap: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            padding: 4px;
+        }
+
+        .g {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .n {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+        }
+
+        .e {
+            background: red;
+            height: 30px;
+            width: 40px;
+        }
+
+        .d {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: row;
+            gap: 4px;
+        }
+
+        main {
+            border: 1px solid black;
+            display: flex;
+            flex-grow: 1;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+            padding: 4px;
+        }
+
+        .c {
+            width: 280px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            gap: 4px;
+            padding: 4px;
+            align-content: center;
+        }
+
+        .l {
+            border: 1px solid black;
+            height: 65px;
+            width: 65px;
+        }
+
+        aside {
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 4px;
+        }
+
+        .a {
+            width: 20vw;
+            border: 1px solid black;
+            height: 4vh;
+        }
+
+        .red {
+            background: red;
+            height: 40px;
+            width: 40px;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border: 1px solid black;
+            padding: 4px;
+            align-items: center;
+        }
+
+        .h {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+        }
+
+        .v {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+        }
+
+        .o {
+            background: red;
+            height: 20px;
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="g">
+            <div class="red"></div>
+            <div>FLEXBOX</div>
+        </div>
+        <div class="n">
+            <div class="e"></div>
+            <div class="e"></div>
+            <div class="e"></div>
+            <div class="e"></div>
+            <div class="e"></div>
+            <div class="e"></div>
+            <div class="e"></div>
+            <div class="e"></div>
+        </div>
+    </nav>
+    
+    <div class="d">
+        <main>
+            <div class="c">
+                <div class="l"></div>
+                <div class="l"></div>
+                <div class="l"></div>
+                <div class="l"></div>
+                <div class="l"></div>
+                <div class="l"></div>
+                <div class="l"></div>
+                <div class="l"></div>
+                <div class="l"></div>
+                <div class="l"></div>
+            </div>
+            <div class="c">
+                <div class="l"></div>
+                <div class="l"></div>
+                <div class="l"></div>
+                <div class="l"></div>
+                <div class="l"></div>
+                <div class="l"></div>
+                <div class="l"></div>
+                <div class="l"></div>
+                <div class="l"></div>
+                <div class="l"></div>
+            </div>
+        </main>
+        <aside>
+            <div class="a"></div>
+            <div class="a"></div>
+            <div class="a"></div>
+            <div class="a"></div>
+            <div class="a"></div>
+            <div class="a"></div>
+            <div class="a"></div>
+            <div class="a"></div>
+            <div class="a"></div>
+            <div class="a"></div>
+        </aside>
+    </div>
+    <footer>
+        <div class="h">
+            <div class="red"></div>
+            <div class="footertext">
+                <div>FLEXBOX</div>
+                <p>&copy;Copy All rights reserved.</p>
+            </div>
+        </div>
+        
+        <div class="v">
+            <div class="o"></div>
+            <div class="o"></div>
+            <div class="o"></div>
+            <div class="o"></div>
+            <div class="o"></div>
+        </div>
+    </footer>
+</body>
+</html>
